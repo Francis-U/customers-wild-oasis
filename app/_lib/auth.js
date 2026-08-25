@@ -18,7 +18,7 @@ const authConfig = {
       return !!auth?.user;
     },
     async signIn({ user, account, profile }) {
-      console.log(user);
+      // console.log(user);
       try {
         const existingGuest = await getGuest(user.email);
 
